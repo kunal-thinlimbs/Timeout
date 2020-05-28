@@ -14,11 +14,8 @@ const kj=await callGraphqh.request(`
 query  playersDetails($playerID:String!){
      playersDetails(playerID:$playerID){
       name
-     birthPlace
-    dob
-    description
-    battingStyle
-    bowlingStyle
+    
+   
     
 }
 }
@@ -37,7 +34,7 @@ query  playersDetails($playerID:String!){
       data:{
       
          name:kj.playersDetails.name,
-        dob:kj.playersDetails.dob
+      
       }
     }
     }
@@ -57,11 +54,8 @@ getAllplayersDetails($skip: Int, $limit: Int){
 getAllplayersDetails(skip: $skip, limit:$limit ) {
  name
     playerID
-    birthPlace
-    dob
-    description
-    battingStyle
-    bowlingStyle}}
+   
+   }}
 `,{
   limit:510,
   skip:1
@@ -93,10 +87,7 @@ return {
   <div >
     <h1>NAME: {data.name}</h1>
     
-    <p >
-      {data.dob}
-    </p>
-    
+   
     <NextLink href="/" passHref>
       <button as="a" mt={4} leftIcon="arrow-back">
         Back
