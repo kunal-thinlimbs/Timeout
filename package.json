@@ -10,7 +10,7 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "apollo-client": "^2.6.10",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "graphql": "^15.0.0",
     "graphql-request": "^1.8.2",
     "graphql-tag": "^2.10.3",
